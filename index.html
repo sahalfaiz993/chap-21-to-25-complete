@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // questipn 2
+        var phone = prompt("  What Is Your Fav Mobile Phone")
+document.write( "<b> Your Favourite Phone Is </b>:"  + phone + "<br>"+ "<br>" ) 
+document.write( "<b> Length Of The String Is</b>:"+ phone.length)
+
+
+// // // question 1
+var fname = prompt ("What Is Your Name")
+var lname = prompt ("What Is Your Father Name")
+document.write(`<h2> ${  fname + " "   +    lname  }</h2>`)
+            end   
+
+// question3
+var country ="Pakistan"
+var name =country.indexOf("P")
+alert(name);
+
+//                      // end
+
+// question4
+var sahal ="sahalfaiz"
+var faiz=sahal.charAt("5")
+alert(faiz);
+
+// questiokn 6
+var fname = prompt ("What Is Your Name")
+var lname = prompt ("What Is Your Father Name")
+document.write(`<h2> ${  fname.concat(" "  +lname  )}</h2>`)
+// // end
+
+// // question 7
+var a= "hyderabad";
+var b = a.replace("hyder","islam" )
+document.write(b)
+// end
+
+// question no 8
+
+var message = "Ali and Sami are best friend .They play cricket in football together"
+var name = message.replace("and","&")
+document.write(name)
+// end
+// question 9
+
+var  str = "472";  
+var num = Number(str);  
+
+document.write("String: " + str + " | Type: " + typeof str +"<br>");
+document.write("<br>")
+document.write("Number: " + num + " | Type: " + typeof num);
+// end
+// question 10
+
+var name = prompt("type your name" + "<br>");
+var capital=name.toUpperCase()
+document.write(capital )
+// // end
+// question 11
+var user = prompt("take a name")
+var title =prompt("put a title case")
+
+document.write("USER INPUT:"+user.toLowerCase()+"<br>"+"Title case:"+title.toUpperCase()+ "<br>")
+document.write("<br>")
+// end
+// question 12
+var num =35.36;
+var string =num.toString().replace(".","")
+var num =35.36;
+document.write("<br>")
+document.write("<h1>"+"String:" +num+("<br>")+"Result:"+string+"<h1>")
+//     // end
+    var username = prompt("Enter your username:");
+var Symbol = false;
+
+for (var i = 0; i < username.length; i++) {
+  var Code = username.CodeAt(i);
+  if (Code === 33 || Code === 44 || Code === 46 || Code === 64) {
+    Symbol = true;
+    break
+}
+}
+if (Symbol) {
+  alert("Please enter a valid username without special symbols [@ . , !]");
+} else {
+  alert("Username is valid: " + username);
+}
+
+
+<!-- question 14 -->
+    var fruite =["apple","mango","banana","orange"]
+    var user = prompt("whats you want to search")
+    var flag = false;
+    for (i=0;i=fruite.length;i++){
+        flag=true;
+        break
+    }
+    if(flag){
+        alert("your item is available")
+    }else{
+      alert  ("  your item is not available")  } 
+      
+      
+      var user = prompt("Enter a last character: ");
+
+if (user.length > 0) {
+  var last = user[user.length - 1];
+  alert("The last character of the value is: " + last);
+} else {
+  alert(" the last character is empty!");
+}
+// question 13
+var user = prompt("enter a variable NAME")
+var arr  = ["!","#","$","%","&"];
+var add = user.split(" ");
+for(i=0;i<arr.length;i++){
+  if(user.includes(arr[i])){
+    user=prompt("enter valid user name")
+    i=-1
+   
+  }
+   
+}document.write(user)
+end
+// question 15
+
+var password = prompt("enter a password");
+var index = password.split("");
+if(parseInt(index[0])==index[0]){
+  alert(" password should contain only alphabats")
+  
+}else if (index.length<=6){
+   alert("pasword length is greater then in 6")
+
+}else{
+  document.write("good password")
+}
+end
+// question 17
+ var a = "pakistan"
+var b = a.charAt(7)
+document.write("Last Chracter of an Input Is : " + "" + b)
+end
+// question 18
+ var ans="The Sahal is the good the The THe";
+var b=ans.split(" ");
+var a=0
+for(var i=0;i<b.length;i++){
+if(b[i].toLowerCase()==="the".toLowerCase()){
+a++;
+
+}
+}
+document.write(a);
+
+// end
+
+
+
+</script>
+</body>
+</html>
